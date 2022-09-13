@@ -14,6 +14,10 @@
 		2A2F413C28C13B55009E9289 /* PinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F413B28C13B55009E9289 /* PinchTests.swift */; };
 		2A2F414628C13B55009E9289 /* PinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F414528C13B55009E9289 /* PinchUITests.swift */; };
 		2A2F414828C13B55009E9289 /* PinchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F414728C13B55009E9289 /* PinchUITestsLaunchTests.swift */; };
+		2A58C3AC28C15784005D3BF7 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58C3AB28C15784005D3BF7 /* InfoPanelView.swift */; };
+		2A6680A328C6590C0024D53E /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6680A228C6590C0024D53E /* PageModel.swift */; };
+		2A6680A528C6597A0024D53E /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6680A428C6597A0024D53E /* PageData.swift */; };
+		2A6986C128C5582D0024827F /* ControllsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6986C028C5582D0024827F /* ControllsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		2A2F414128C13B55009E9289 /* PinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2F414528C13B55009E9289 /* PinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITests.swift; sourceTree = "<group>"; };
 		2A2F414728C13B55009E9289 /* PinchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A58C3AB28C15784005D3BF7 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		2A6680A228C6590C0024D53E /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		2A6680A428C6597A0024D53E /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		2A6986C028C5582D0024827F /* ControllsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,11 @@
 		2A2F412928C13B50009E9289 /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
+				2A2F415828C13FBA009E9289 /* Data */,
+				2A2F415728C13FA9009E9289 /* Model */,
+				2A2F415628C13F96009E9289 /* Views */,
 				2A2F412A28C13B50009E9289 /* PinchApp.swift */,
-				2A2F412C28C13B50009E9289 /* ContentView.swift */,
+				2A2F415428C13F70009E9289 /* Screen */,
 				2A2F412E28C13B55009E9289 /* Assets.xcassets */,
 				2A2F413028C13B55009E9289 /* Preview Content */,
 			);
@@ -125,6 +136,39 @@
 				2A2F414728C13B55009E9289 /* PinchUITestsLaunchTests.swift */,
 			);
 			path = PinchUITests;
+			sourceTree = "<group>";
+		};
+		2A2F415428C13F70009E9289 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2A2F412C28C13B50009E9289 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2A2F415628C13F96009E9289 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A58C3AB28C15784005D3BF7 /* InfoPanelView.swift */,
+				2A6986C028C5582D0024827F /* ControllsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A2F415728C13FA9009E9289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A6680A228C6590C0024D53E /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A2F415828C13FBA009E9289 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A6680A428C6597A0024D53E /* PageData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2F412D28C13B50009E9289 /* ContentView.swift in Sources */,
+				2A6680A328C6590C0024D53E /* PageModel.swift in Sources */,
+				2A6986C128C5582D0024827F /* ControllsView.swift in Sources */,
 				2A2F412B28C13B50009E9289 /* PinchApp.swift in Sources */,
+				2A6680A528C6597A0024D53E /* PageData.swift in Sources */,
+				2A58C3AC28C15784005D3BF7 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +470,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,8 +499,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
